@@ -43,7 +43,7 @@ export default function Contact() {
                   </h2>
                   <p className="text-lg mb-8">
                     Our office hours are Monday to Friday,
-                    <br /> 9 AM to 5 PM. We're here to assist you with any
+                    <br /> 9 AM to 5 PM. We&apos;re here to assist you with any
                     questions or support you need.
                   </p>
 
