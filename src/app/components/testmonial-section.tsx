@@ -220,7 +220,7 @@ export default function TestimonialSection() {
                   <div className="bg-white rounded-xl shadow-lg p-6 w-full md:w-[280px] flex flex-col border border-slate-200 md:mx-2">
                     <div className="mb-4">{testimonial.icon}</div>
                     <p className="text-[18px] mb-6 flex-grow">
-                      "{testimonial.content}"
+                      &quot;{testimonial.content}&quot;
                     </p>
                     <div className="flex items-center">
                       <div className="w-10 h-10 rounded-full overflow-hidden mr-3 bg-slate-200">

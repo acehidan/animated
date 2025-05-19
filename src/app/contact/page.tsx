@@ -20,7 +20,7 @@ export default function Contact() {
                 Get in touch
               </h1>
               <p className="text-lg text-slate-600 mb-8 poppins">
-                We're here to help! Whether you have questions about our
+                We&apos;re here to help! Whether you have questions about our
                 packages, need support, or want to discuss your specific needs,
                 reach out to us.
               </p>
@@ -59,7 +59,7 @@ export default function Contact() {
                   </h2>
                   <p className="text-lg mb-8">
                     Our office hours are Monday to Friday,
-                    <br /> 9 AM to 5 PM. We're here to assist you with any
+                    <br /> 9 AM to 5 PM. We&apos;re here to assist you with any
                     questions or support you need.
                   </p>
 

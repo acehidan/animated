@@ -124,7 +124,7 @@ export default function FeatureCarousel() {
                         {testimonial.name}
                       </h1>
                       <p className="text-[18px] lg:text-[24px]">
-                        "{testimonial.content}"
+                        &quot;{testimonial.content}&quot;
                       </p>
                     </div>
 

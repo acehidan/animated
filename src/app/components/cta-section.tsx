@@ -28,9 +28,9 @@ export default function CTASection() {
             </h1>
 
             <p className="text-lg text-white sm:text-xl max-w-lg poppins">
-              We're here to help! Whether you have questions about our packages,
-              need support, or want to discuss your specific needs, reach out to
-              us.
+              We&apos;re here to help! Whether you have questions about our
+              packages, need support, or want to discuss your specific needs,
+              reach out to us.
             </p>
 
             <div className="">
