@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white backdrop-blur-md shadow-sm`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
@@ -67,7 +67,7 @@ export default function Navbar() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors text-[14px] ${
                 isActive("/")
                   ? "text-primary"
                   : isDarkSection
@@ -79,7 +79,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/about"
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors text-[14px] ${
                 isActive("/about")
                   ? "text-primary"
                   : isDarkSection
@@ -91,7 +91,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/feature"
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors text-[14px] ${
                 isActive("/feature")
                   ? "text-primary"
                   : isDarkSection
@@ -103,7 +103,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/plan"
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors text-[14px] ${
                 isActive("/plan")
                   ? "text-primary"
                   : isDarkSection
@@ -115,7 +115,7 @@ export default function Navbar() {
             </Link>
             <Link
               href="/contact"
-              className={`font-medium transition-colors ${
+              className={`font-medium transition-colors text-[14px] ${
                 isActive("/contact")
                   ? "text-primary"
                   : isDarkSection
@@ -127,7 +127,9 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <button className="button hidden md:block">Consult with us</button>
+          <button className="button hidden md:block whitespace-nowrap">
+            Consult with us
+          </button>
 
           <button
             className={`md:hidden ${
@@ -211,9 +213,7 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <button className="inline-flex items-center justify-center gap-1 whitespace-nowrap rounded-md text-[14px] poppins font-semibold ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 w-full">
-              Get Started
-            </button>
+            <button className="button">Get Started</button>
           </div>
         </div>
       )}

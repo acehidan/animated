@@ -8,21 +8,26 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-poppins);
+  --font-mono: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #5d4037;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+
+.inter {
+  font-family: var(--font-inter);
 }
 
 .scroll-section-outer {
@@ -31,12 +36,52 @@ body {
 }
 
 .scroll-section-inner {
-  background-color: red;
-  height: 50vh;
+  /* background-color: red; */
+  height: 70vh;
   width: 400vw;
   display: flex;
   flex-direction: row;
   position: relative;
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.button {
+  background-color: var(--primary);
+  transition: all 0.3s ease;
+  font-family: var(--font-poppins);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button-outline {
+  background-color: transparent;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.button-outline:hover,
+.button:hover {
+  scale: 1.02;
 }
 
 /* .button {
