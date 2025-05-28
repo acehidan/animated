@@ -7,7 +7,7 @@ export default function AboutBanner() {
     <section className="section min-h-screen flex items-end relative overflow-hidden bg-white">
       <div className="w-full mt-40 md:mt-0">
         <div className="flex flex-col md:flex-row justify-between w-full">
-          <div className="container mx-auto px-4 flex flex-col md:w-1/2 md:justify-center md:items-center">
+          <div className="container mx-auto px-4 flex flex-col md:w-1/2 md:justify-center lg:ps-20">
             <div className="space-y-6">
               <span className="text-[#151515] font-semibold text-[16px] md:text-[24px]">
                 At Live Code Myanmar

@@ -5,15 +5,15 @@ import Image from "next/image";
 export default function HowWeStarted() {
   return (
     <section className="section min-h-screen flex items-end relative overflow-hidden bg-white py-40">
-      <div className="w-full px-[7rem]">
-        <div className="flex flex-col lg:flex-row w-full bg-red-500 ">
+      <div className="w-full px-4 lg:px-20">
+        <div className="flex flex-col md:flex-row w-full ">
           <div className="flex flex-col w-full lg:w-1/2 lg:justify-center">
             <div className="space-y-6">
               <h1 className="text-4xl my-0 sm:text-5xl text-primary lg:text-6xl font-bold leading-tight inter ">
                 How we started
               </h1>
               <p
-                className=" mt-5 text-[16px] md:text-[20px] text-[#151515] lg:max-w-lg poppins"
+                className=" mt-5 text-[16px] lg:text-[20px] text-[#151515] lg:max-w-lg poppins"
                 style={{ lineHeight: "2", letterSpacing: "0.02em" }}
               >
                 Our story started on our Social Media Agency, Digital Saw,
@@ -36,9 +36,9 @@ export default function HowWeStarted() {
           />
         </div>
 
-        <div className="w-full pt-5 md:pt-20 bg-blue-500">
+        <div className="w-full pt-5 md:pt-20">
           <p
-            className="mt-5 text-[16px] md:text-[20px] text-[#151515] poppins"
+            className="mt-5 text-[16px] lg:text-[20px] text-[#151515] poppins"
             style={{ lineHeight: "2", letterSpacing: "0.02em" }}
           >
             Our story started on our Social Media Agency, Digital Saw, working
