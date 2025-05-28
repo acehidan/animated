@@ -6,77 +6,103 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 
 const clients = [
-  { id: 1, name: "Client 1", image: "" },
-  { id: 2, name: "Client 2" },
-  { id: 3, name: "Client 3" },
-  { id: 4, name: "Client 4" },
-  { id: 5, name: "Client 5" },
-  { id: 6, name: "Client 6" },
+  {
+    id: 1,
+    name: (
+      <span>
+        King Sky <br /> Clothing Shop
+      </span>
+    ),
+    image: "/client01.png",
+  },
+  {
+    id: 2,
+    name: (
+      <span>
+        Smile Lady <br />
+        BKK Fashion World
+      </span>
+    ),
+    image: "/client02.png",
+  },
+  { id: 3, name: <span>UEDC Myanmar</span>, image: "/client03.png" },
+  {
+    id: 4,
+    name: (
+      <span>
+        Baby World <br /> Baby Clothing
+      </span>
+    ),
+    image: "/client04.png",
+  },
+  {
+    id: 5,
+    name: (
+      <span>
+        Sweet Honey <br />
+        Online Fashion Shop
+      </span>
+    ),
+    image: "/client05.png",
+  },
+  {
+    id: 6,
+    name: (
+      <span>
+        One One <br />
+        Clothing
+      </span>
+    ),
+    image: "/client06.png",
+  },
+  {
+    id: 7,
+    name: (
+      <span>
+        Happy Lady Online <br /> Shopping
+      </span>
+    ),
+    image: "/client07.png",
+  },
+  {
+    id: 8,
+    name: <span>Khit Silk & Fabric</span>,
+    image: "/client08.png",
+  },
 ];
 
 export default function ClientSection() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const clientsRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Animate clients on scroll
-    if (clientsRef.current) {
-      gsap.from(clientsRef.current.children, {
-        opacity: 0,
-        y: 20,
-        duration: 0.8,
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-        },
-      });
-    }
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
-
   return (
-    <section
-      ref={sectionRef}
-      className="section"
-      data-bgcolor="#ffffff"
-      data-textcolor="#000000"
-    >
-      <div className="mt-[-5px]">
-        <div className="w-full ">
-          <Image
-            src="/clientSection.svg"
-            alt="Full width image"
-            layout="responsive"
-            width={1920} // your image's original width
-            height={1080} // your image's original height
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
-          />
-        </div>
-        <div className="container px-40 py-20 mx-auto grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 items-center justify-items-center">
+    <section className="section bg-white">
+      <div className="px-4 lg:px-20 py-20 mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-10 md:items-center md:justify-center w-full order-2 md:order-1 mt-10 md:mt-0">
           {clients.map((client) => (
             <div
               key={client.id}
-              className="w-full max-w-[140px] grayscale hover:grayscale-0 transition-all duration-300"
+              className="w-full max-w-[140px] h-[190px] hover:scale-110 transition-all duration-300 overflow-hidden"
             >
               <Image
-                src="/e.jpg"
-                alt={client.name}
+                src={client.image}
+                alt="client"
                 width={140}
                 height={140}
-                className="object-contain"
+                className="w-[140px] h-[140px] object-contain rounded-lg"
               />
+              <p className="text-[12px] font-semibold poppins text-gray-500 mt-5 text-center">
+                {client.name}
+              </p>
             </div>
           ))}
+        </div>
+        <div className="flex md:justify-center order-1 md:order-2">
+          <div>
+            <h2 className="text-4xl my-0 sm:text-5xl text-primary lg:text-6xl font-bold leading-tight inter">
+              Some of <br /> Our Clients
+            </h2>
+            <p className="text-[24px] sm:text-xl text-[#151515] max-w-lg font-semibold poppins">
+              Trusted by successful <br /> Online Live Sale Business
+            </p>
+          </div>
         </div>
       </div>
     </section>

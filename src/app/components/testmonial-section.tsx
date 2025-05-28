@@ -148,6 +148,13 @@ export default function TestimonialSection() {
     },
     responsive: [
       {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
@@ -162,16 +169,6 @@ export default function TestimonialSection() {
         },
       },
     ],
-    onReInit: () => {
-      // Update slidesToShow based on current settings
-      if (window.innerWidth < 640) {
-        setSlidesToShow(1);
-      } else if (window.innerWidth < 1024) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(3);
-      }
-    },
   };
 
   // Calculate progress percentage
@@ -181,33 +178,29 @@ export default function TestimonialSection() {
   const normalizedProgress = Math.min(progressPercentage, 100);
 
   return (
-    <section
-      className="py-16 md:py-24"
-      data-bgcolor="#F2F3F7"
-      data-textcolor="#000000"
-    >
-      <div className="container mx-auto">
+    <section className="py-16 md:py-24 bg-[#F2F3F7]">
+      <div className="px-4 md:px-20 mx-auto">
         <div className=" md:w-full">
-          <div className=" flex flex-col md:flex-row justify-between items-center mb-8">
+          <div className=" flex flex-col md:flex-row justify-between md:items-center mb-8">
             <div>
-              <h2 className=" text-3xl md:text-4xl font-bold">
-                What our customers are saying
+              <h2 className="text-4xl my-0 sm:text-5xl text-primary lg:text-6xl font-bold leading-tight inter ">
+                What our <br /> customers saying
               </h2>
             </div>
-            <div className="hidden md:block flex items-center space-x-4 mt-4 md:mt-0">
+            <div className="flex items-center space-x-4 mt-4 md:mt-0">
               <button
                 onClick={handlePrev}
                 className="p-2 rounded-full border border-gray-500 hover:bg-slate-100 transition-colors shadow-md"
                 aria-label="Previous testimonials"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-5 h-5 text-blue-900" />
               </button>
               <button
                 onClick={handleNext}
                 className="p-2 rounded-full border border-gray-500 hover:bg-slate-100 transition-colors shadow-md"
                 aria-label="Next testimonials"
               >
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-5 h-5 text-blue-900" />
               </button>
             </div>
           </div>
@@ -216,7 +209,7 @@ export default function TestimonialSection() {
           <div className="testimonial-slider mt-10 text-black">
             <Slider ref={sliderRef} {...settings}>
               {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className="px-2 md:px-3">
+                <div key={testimonial.id} className="px-0 md:px-3">
                   <div className="bg-white rounded-xl shadow-lg p-6 w-full md:w-[280px] flex flex-col border border-slate-200 md:mx-2">
                     <div className="mb-4">{testimonial.icon}</div>
                     <p className="text-[18px] mb-6 flex-grow">

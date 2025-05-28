@@ -35,7 +35,7 @@ export default function Footer() {
               >
                 About Live Code
               </Link>
-              <Link
+              {/* <Link
                 href="/feature"
                 className="text-white hover:text-gray-300 font-medium text-[14px] transition-colors"
               >
@@ -46,7 +46,7 @@ export default function Footer() {
                 className="text-white hover:text-gray-300 font-medium text-[14px] transition-colors"
               >
                 Packages
-              </Link>
+              </Link> */}
               <Link
                 href="/contact"
                 className="text-white hover:text-gray-300 font-medium text-[14px] transition-colors"
@@ -82,13 +82,13 @@ export default function Footer() {
                 <FaFacebookMessenger size={20} />
                 <span className="sr-only">Messenger</span>
               </Link>
-              <Link
+              {/* <Link
                 href="#"
                 className="border border-white p-1 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors"
               >
                 <FaTelegram size={20} />
                 <span className="sr-only">Telegram</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

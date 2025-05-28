@@ -57,7 +57,21 @@ body {
   transition: all 0.3s ease;
   font-family: var(--font-poppins);
   color: white;
-  display: inline-flex;
+  /* display: inline-flex; */
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ctabutton {
+  background-color: white;
+  transition: all 0.3s ease;
+  font-family: var(--font-poppins);
+  color: #151515;
+  /* display: inline-flex; */
   align-items: center;
   justify-content: center;
   padding: 15px 25px;
@@ -69,7 +83,7 @@ body {
 .button-outline {
   background-color: transparent;
   color: var(--primary);
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   justify-content: center;
   padding: 15px 25px;

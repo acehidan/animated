@@ -89,7 +89,7 @@ export default function Navbar() {
             >
               About Live Code
             </Link>
-            <Link
+            {/* <Link
               href="/feature"
               className={`font-medium transition-colors text-[14px] ${
                 isActive("/feature")
@@ -100,8 +100,8 @@ export default function Navbar() {
               }`}
             >
               Features
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               href="/plan"
               className={`font-medium transition-colors text-[14px] ${
                 isActive("/plan")
@@ -112,7 +112,7 @@ export default function Navbar() {
               }`}
             >
               Packages
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className={`font-medium transition-colors text-[14px] ${
@@ -127,9 +127,7 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <button className="button hidden md:block whitespace-nowrap">
-            Consult with us
-          </button>
+          <button className="button hidden md:block">Consult with us</button>
 
           <button
             className={`md:hidden ${
@@ -174,7 +172,7 @@ export default function Navbar() {
               About Live Code
             </Link>
 
-            <Link
+            {/* <Link
               href="/feature"
               className={`py-2 font-medium transition-colors ${
                 isActive("/feature")
@@ -199,7 +197,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               Packages
-            </Link>
+            </Link> */}
             <Link
               href="/contact"
               className={`py-2 font-medium transition-colors ${
