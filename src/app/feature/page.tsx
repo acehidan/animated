@@ -9,15 +9,6 @@ import FeatureCarousel from "../components/feature-carousel";
 import CTASection from "../components/cta-section";
 
 export default function Feature() {
-  useEffect(() => {
-    // Initialize the scroll color change functionality
-    const cleanup = initScrollColorChange();
-
-    return () => {
-      cleanup();
-    };
-  }, []);
-
   return (
     <div className="min-h-screen">
       <Navbar />

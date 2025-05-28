@@ -11,22 +11,8 @@ import CTASection from "../components/cta-section";
 import Footer from "../components/footer";
 
 export default function About() {
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    // Initialize the scroll color change functionality
-    const cleanup = initScrollColorChange();
-
-    return () => {
-      cleanup();
-    };
-  }, []);
-
   return (
-    <div
-      ref={containerRef}
-      className="min-h-screen transition-colors duration-500"
-    >
+    <div className="">
       <Navbar />
       <main>
         <AboutBanner />

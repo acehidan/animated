@@ -1,19 +1,11 @@
 "use client";
-
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 
 const clients = [
   {
     id: 1,
-    name: (
-      <span>
-        King Sky <br /> Clothing Shop
-      </span>
-    ),
-    image: "/client01.png",
+    name: <span>Khit Silk & Fabric</span>,
+    image: "/client08.png",
   },
   {
     id: 2,
@@ -25,12 +17,23 @@ const clients = [
     ),
     image: "/client02.png",
   },
-  { id: 3, name: <span>UEDC Myanmar</span>, image: "/client03.png" },
+  {
+    id: 3,
+    name: (
+      <span>
+        UEDC Myanmar တံခါး၊ <br />
+        ကြွေပြားနှင့် အိမ်ဆောက်ပစ္စည်း <br />
+        အမျိုးမျိုး ဖြန့်ချီရေး
+      </span>
+    ),
+    image: "/client03.png",
+  },
   {
     id: 4,
     name: (
       <span>
-        Baby World <br /> Baby Clothing
+        Baby World ကလေး <br /> အဝတ်အထည် အမျိုးမျိုး လက်ကား <br /> ဖြန့်ချီရေး -
+        ပင်ရင်း
       </span>
     ),
     image: "/client04.png",
@@ -49,8 +52,7 @@ const clients = [
     id: 6,
     name: (
       <span>
-        One One <br />
-        Clothing
+        One One onlineshop <br /> စပန့်ထည်လက်လီလက်ကား
       </span>
     ),
     image: "/client06.png",
@@ -66,8 +68,13 @@ const clients = [
   },
   {
     id: 8,
-    name: <span>Khit Silk & Fabric</span>,
-    image: "/client08.png",
+    name: (
+      <span>
+        King Sky - ကင်းစကိုင်း <br /> ချုပ်ထည်အမျိုးမျိုး <br />{" "}
+        လက္ကားဖြန့်ချီရေး
+      </span>
+    ),
+    image: "/client01.png",
   },
 ];
 
@@ -79,7 +86,7 @@ export default function ClientSection() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="w-full max-w-[140px] h-[190px] hover:scale-110 transition-all duration-300 overflow-hidden"
+              className="w-full max-w-[200px] flex flex-col items-center h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
             >
               <Image
                 src={client.image}
@@ -88,7 +95,7 @@ export default function ClientSection() {
                 height={140}
                 className="w-[140px] h-[140px] object-contain rounded-lg"
               />
-              <p className="text-[12px] font-semibold poppins text-gray-500 mt-5 text-center">
+              <p className="text-[12px] font-semibold poppins text-gray-500 mt-5 text-center noto-sans-myanmar">
                 {client.name}
               </p>
             </div>
