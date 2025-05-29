@@ -32,8 +32,16 @@ const clients = [
     id: 4,
     name: (
       <span>
-        Baby World ကလေး <br /> အဝတ်အထည် အမျိုးမျိုး လက်ကား <br /> ဖြန့်ချီရေး -
-        ပင်ရင်း
+        <span className="hidden md:block">
+          {" "}
+          Baby World ကလေး <br /> အဝတ်အထည် အမျိုးမျိုး လက်ကား <br /> ဖြန့်ချီရေး
+          - ပင်ရင်း
+        </span>
+        <span className="block md:hidden">
+          {" "}
+          Baby World ကလေး <br /> အဝတ်အထည် <br /> အမျိုးမျိုး လက်ကား <br />{" "}
+          ဖြန့်ချီရေး - ပင်ရင်း
+        </span>
       </span>
     ),
     image: "/client04.png",
@@ -81,13 +89,14 @@ const clients = [
 export default function ClientSection() {
   return (
     <section className="section bg-white">
-      <div className="px-4 lg:px-20 py-20 mx-auto grid grid-cols-1 md:grid-cols-2">
-        <div className="grid grid-cols-2 md:grid-cols-3 md:gap-10 md:items-center md:justify-center w-full order-2 md:order-1 mt-10 md:mt-0">
+      <div className="px-4 lg:px-20 py-20 mx-auto flex flex-col md:flex-row justify-between items-start ">
+        <div className="w-full md:w-2/3 lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-10 w-full order-2 md:order-1 mt-10 md:mt-0">
           {clients.map((client) => (
             <div
               key={client.id}
-              className="w-full max-w-[200px] flex flex-col items-center h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
+              className="w-[200px] md:max-w-[240px] flex flex-col items-start md:items-center h-[240px] lg:h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
             >
+              {/* <div> */}
               <Image
                 src={client.image}
                 alt="client"
@@ -98,15 +107,16 @@ export default function ClientSection() {
               <p className="text-[12px] font-semibold poppins text-gray-500 mt-5 text-center noto-sans-myanmar">
                 {client.name}
               </p>
+              {/* </div> */}
             </div>
           ))}
         </div>
-        <div className="flex md:justify-center order-1 md:order-2">
-          <div>
-            <h2 className="text-4xl my-0 sm:text-5xl text-primary lg:text-6xl font-bold leading-tight inter">
+        <div className="w-full md:w-1/3 lg:w-1/2 flex justify-start md:justify-end lg:justify-center order-1 md:order-2">
+          <div className="">
+            <h2 className="my-0 text-[36px] lg:text-6xl text-primary font-bold leading-tight inter">
               Some of <br /> Our Clients
             </h2>
-            <p className="text-[24px] sm:text-xl text-[#151515] max-w-lg font-semibold poppins">
+            <p className="text-[16px] text-[#1F1F1F] max-w-lg font-semibold poppins">
               Trusted by successful <br /> Online Live Sale Business
             </p>
           </div>

@@ -85,8 +85,8 @@ export default function FeatureCarousel() {
 
   return (
     <section
-      className="section py-16 md:py-24 bg-[#151515]"
-      data-bgcolor="#151515"
+      className="section py-16 md:py-24 bg-[#1F1F1F]"
+      data-bgcolor="#1F1F1F"
       data-textcolor="#ffffff"
     >
       <div className="container mx-auto px-4 mt-10">

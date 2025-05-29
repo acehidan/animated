@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">
             <Image
-              src="logo.svg"
+              src="/Logowhite.svg"
               alt="Logo"
               width={100}
               height={100}

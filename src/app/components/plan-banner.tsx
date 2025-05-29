@@ -58,7 +58,7 @@ export default function PlanBanner() {
     >
       <div className="container mx-auto px-4 flex flex-col items-center pt-40">
         <div
-          className="max-w-4xl mx-auto md:text-center text-[#151515]"
+          className="max-w-4xl mx-auto md:text-center text-[#1F1F1F]"
           ref={contentRef}
         >
           <h1 className="text-4xl md:text-5xl font-semibold">

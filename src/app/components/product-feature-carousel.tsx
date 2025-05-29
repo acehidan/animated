@@ -80,7 +80,7 @@ export default function ProductFeatureCarousel() {
               <h2 className="text-4xl my-0 sm:text-5xl text-primary lg:text-6xl font-bold leading-tight">
                 Built to <br /> Sale Easily
               </h2>
-              <p className="text-lg mt-5 sm:text-xl text-[#151515] max-w-lg">
+              <p className="text-lg mt-5 sm:text-xl text-[#1F1F1F] max-w-lg">
                 Manage your shop better and sale online easily
               </p>
             </div>
@@ -129,16 +129,16 @@ export default function ProductFeatureCarousel() {
             >
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
-                  <div className="rounded-xl shadow-sm h-[400px] px-8 py-8 border border-slate-200 bg-white">
-                    <h1 className="text-[20px] md:text-[24px] lg:text-[32px] font-bold mb-4 text-primary">
+                  <div className="rounded-xl shadow-sm md:h-[400px] px-8 py-8 border border-slate-200 bg-white">
+                    <h1 className="text-[28px] md:text-[32px] lg:text-[40px] font-bold mb-2 text-primary inter">
                       {testimonial.name}
                     </h1>
                     <div className="flex flex-col md:flex-row justify-between items-center h-full">
                       <div className="md:w-1/2 md:pr-6 order-2 mt-4 md:mt-0">
-                        <h3 className="text-[16px] md:text-[18px] lg:text-[20px] font-medium text-gray-800 mb-3">
+                        <h3 className="text-[24px] md:text-[26px] lg:text-[28px] text-[#232323] font-semibold text-gray-800 mb-3 inter">
                           {testimonial.sub}
                         </h3>
-                        <p className="text-[14px] md:text-[16px] text-gray-600 leading-relaxed">
+                        <p className="text-[14px] md:text-[15px] lg:text-[16px] text-[#1F1F1F] font-medium leading-relaxed poppins">
                           {testimonial.content}
                         </p>
                       </div>

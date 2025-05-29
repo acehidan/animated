@@ -13,7 +13,7 @@ export default function HowWeStarted() {
                 How we started
               </h1>
               <p
-                className=" mt-5 text-[16px] lg:text-[20px] text-[#151515] lg:max-w-lg poppins"
+                className=" mt-5 text-[16px] lg:text-[20px] text-[#1F1F1F] font-semibold lg:max-w-lg poppins"
                 style={{ lineHeight: "2", letterSpacing: "0.02em" }}
               >
                 Our story started on our Social Media Agency, Digital Saw,
@@ -38,15 +38,20 @@ export default function HowWeStarted() {
 
         <div className="w-full pt-5 md:pt-20">
           <p
-            className="mt-5 text-[16px] lg:text-[20px] text-[#151515] poppins"
+            className="mt-5 text-[16px] lg:text-[20px] text-[#1F1F1F] font-semibold poppins"
             style={{ lineHeight: "2", letterSpacing: "0.02em" }}
           >
-            Our story started on our Social Media Agency, Digital Saw, working
-            hand-in-hand with online shops across Myanmar. As a social media
-            agency, we saw the vibrant energy of Live Selling — and the silent
-            struggles behind the scenes. Hours wasted sorting comments. Lost
-            orders. Delayed responses. We knew there had to be a better way – a
-            way for businesses to Live Easily, Live Better.
+            We partnered with{" "}
+            <a
+              href="https://www.otastechsolutions.com/"
+              style={{ color: "#07f" }}
+            >
+              OTAS Tech Solutions
+            </a>{" "}
+            to create Live Code Software — a tool designed by sellers, for
+            sellers. Launched in the third quarter of 2024, it automates the
+            messy backend work of Live Sales, saving you time, cutting costs,
+            and reducing errors.
           </p>
         </div>
       </div>

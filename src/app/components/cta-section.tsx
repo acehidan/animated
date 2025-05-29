@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section className="section pt-24 md:pt-32 relative overflow-hidden bg-[#151515]">
+    <section className="section pt-24 md:pt-32 relative overflow-hidden bg-[#1F1F1F]">
       <div className="mx-auto px-4 lg:px-20">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="space-y-6 w-full md:w-1/2">
@@ -18,12 +19,17 @@ export default function CTASection() {
             </p>
 
             <div className="">
-              <button className="ctabutton">Let talk with us</button>
+              <Link href="/contact" className="ctabutton">
+                Let&apos;s talk with us
+              </Link>
             </div>
           </div>
 
           <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
-            <div className="md:p-20 p-10 bg-white rounded-4xl ">
+            <div
+              className="md:p-20 p-10 bg-white"
+              style={{ borderRadius: "60px" }}
+            >
               <Image
                 src="cta.svg"
                 alt="Phone"

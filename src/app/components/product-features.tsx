@@ -20,7 +20,7 @@ export default function ProductFeatures() {
               150,000 +{" "}
             </span>
             <span className="mt-2 text-[20px] lg:text-[32px]">
-              Success Orders
+              Successful Orders
             </span>
           </div>
           <div className="border-r border-2 border-dashed border-white"></div>

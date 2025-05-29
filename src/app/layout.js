@@ -1,4 +1,4 @@
-import { Poppins, Work_Sans, Noto_Sans_Myanmar } from "next/font/google";
+import { Poppins, Work_Sans, Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -13,9 +13,9 @@ const work_sans = Work_Sans({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const noto_sans_myanmar = Noto_Sans_Myanmar({
-  variable: "--font-noto-sans-myanmar",
-  subsets: ["myanmar"],
+const source_sans_3 = Source_Sans_3({
+  variable: "--font-source-sans-3",
+  subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${work_sans.variable} ${noto_sans_myanmar.variable} antialiased`}
+        className={`${poppins.variable} ${work_sans.variable} ${source_sans_3.variable} antialiased`}
       >
         {children}
       </body>

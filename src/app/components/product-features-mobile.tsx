@@ -81,7 +81,7 @@ export default function ProductFeaturesMobile() {
     <section
       ref={sectionRef}
       className="section py-24"
-      data-bgcolor="#151515"
+      data-bgcolor="#1F1F1F"
       data-textcolor="#ffffff"
     >
       <div className="container mx-auto px-4 mb-16">
@@ -130,10 +130,10 @@ export default function ProductFeaturesMobile() {
             >
               <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
                 <div className="space-y-2 order-2">
-                  <h3 className="text-[22px] font-bold text-white">
+                  <h3 className="text-[40px] font-semibold text-white inter">
                     {feature.title}
                   </h3>
-                  <p className="text-[28px] text-slate-300 poppins">
+                  <p className="text-[28px] text-slate-300 inter">
                     {feature.description}
                   </p>
                   <p className="text-[16px] text-slate-300 poppins">

@@ -20,11 +20,11 @@ export default function HeroSectionMobile() {
               <h1 className="text-4xl sm:text-5xl text-primary lg:text-6xl font-bold leading-tight inter">
                 Live Easily <br /> Live Better
               </h1>
-              <span className="text-[#151515] font-semibold text-[24px]">
+              <span className="text-[#1F1F1F] font-semibold text-[24px]">
                 {" "}
                 with Live Code Myanmar
               </span>
-              <p className="text-lg sm:text-xl text-[#151515] max-w-lg poppins">
+              <p className="text-lg sm:text-xl text-[#1F1F1F] max-w-lg poppins">
                 With a just few simple clicks- mange your live sale stocks, rack
                 live sale orders, save time with our auto replay messages
               </p>

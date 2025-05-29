@@ -1,9 +1,7 @@
 "use client";
 
-import { useEffect } from "react";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
-import { initScrollColorChange } from "../lib/scroll-color";
 import FeatureBanner from "../components/feature-banner";
 import FeatureCarousel from "../components/feature-carousel";
 import CTASection from "../components/cta-section";
