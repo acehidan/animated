@@ -27,6 +27,26 @@ body {
   font-family: var(--font-poppins);
 }
 
+/* Swiper customizations */
+.mySwiper {
+  width: 100%;
+  padding-right: 0;
+}
+
+.swiper-slide {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  height: auto;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide-next {
+  opacity: 0.8;
+}
+
 .inter {
   font-family: var(--font-work-sans);
 }
