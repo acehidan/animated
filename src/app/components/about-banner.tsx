@@ -13,7 +13,7 @@ export default function AboutBanner() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="w-full mt-40 md:mt-0">
+      <div className="w-full mt-20 md:mt-0">
         <div className="flex flex-col md:flex-row justify-between w-full">
           <div className="container mx-auto px-4 flex flex-col md:w-1/2 md:justify-center lg:ps-20">
             <div className="space-y-6">

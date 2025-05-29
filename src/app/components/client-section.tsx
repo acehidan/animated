@@ -94,7 +94,7 @@ export default function ClientSection() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="w-[200px] md:max-w-[240px] flex flex-col items-start md:items-center h-[240px] lg:h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
+              className="w-[200px] md:max-w-[240px] flex flex-col items-center h-[240px] lg:h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
             >
               {/* <div> */}
               <Image
