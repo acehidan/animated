@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="section h-[120vh] sm:h-[150vh] md:h-screen flex md:items-end bg-white md:overflow-hidden overflow-hidden">
+    <section className="section h-[100vh] sm:h-[150vh] md:h-screen flex md:items-end bg-white md:overflow-hidden overflow-hidden">
       <div className="w-full mt-40 md:mt-0">
         <div className="flex flex-col md:flex-row justify-between w-full relative">
           <div className="container mx-auto px-4 flex flex-col md:w-1/2 justify-center md:hidden absolute top-0 z-10 lg:ps-20">
@@ -23,7 +23,7 @@ export default function HeroSection() {
 
               <div className="">
                 <Link href="/contact" className="button">
-                  Get live Code
+                  Get Live Code
                 </Link>
                 {/* <button className="button-outline">See our packages</button> */}
               </div>

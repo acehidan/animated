@@ -90,11 +90,11 @@ export default function ClientSection() {
   return (
     <section className="section bg-white">
       <div className="px-4 lg:px-20 py-20 mx-auto flex flex-col md:flex-row justify-between items-start ">
-        <div className="w-full md:w-2/3 lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-10 w-full order-2 md:order-1 mt-10 md:mt-0">
+        <div className="w-full md:w-2/3 lg:w-1/2 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-10 w-full order-2 md:order-1 mt-10 md:mt-0 justify-center">
           {clients.map((client) => (
             <div
               key={client.id}
-              className="w-[200px] md:max-w-[240px] flex flex-col items-center h-[240px] lg:h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
+              className="w-auto md:max-w-[240px] flex flex-col items-center h-[240px] lg:h-[220px] hover:scale-110 transition-all duration-300 overflow-hidden"
             >
               {/* <div> */}
               <Image
