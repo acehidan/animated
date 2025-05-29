@@ -5,8 +5,6 @@ import Navbar from "../components/navbar";
 import HowWeStarted from "../components/howe-start";
 import AboutCTA from "../components/about-cta";
 import TestimonialSection from "../components/testmonial-section";
-import { useEffect, useRef } from "react";
-import { initScrollColorChange } from "../lib/scroll-color";
 import CTASection from "../components/cta-section";
 import Footer from "../components/footer";
 

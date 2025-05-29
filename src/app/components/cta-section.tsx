@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section className="section pt-24 md:pt-32 relative overflow-hidden bg-[#1F1F1F]">
+    <section className="section py-24 relative overflow-hidden bg-[#232323] pattern">
       <div className="mx-auto px-4 lg:px-20">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <div className="space-y-6 w-full md:w-1/2">

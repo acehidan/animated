@@ -15,7 +15,7 @@ export default function Footer() {
   console.log(pathname);
 
   return (
-    <footer className="bg-[#151515] text-white py-24">
+    <footer className="bg-[#232323] text-white py-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-6 md:mb-0">
@@ -60,7 +60,7 @@ export default function Footer() {
               )}
             </nav>
 
-            <div className="flex justify-between md:space-x-4 lg:space-x-20">
+            <div className="flex justify-between md:space-x-4 lg:space-x-10">
               <Link
                 href="https://www.facebook.com/livecodemyanmar"
                 className="border border-white p-1 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors"

@@ -4,7 +4,15 @@ import Image from "next/image";
 
 export default function AboutBanner() {
   return (
-    <section className="section min-h-screen flex items-end relative overflow-hidden bg-white">
+    <section
+      className="section min-h-screen flex items-end relative overflow-hidden bg-white"
+      style={{
+        backgroundImage: "url('/pattern.svg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="w-full mt-40 md:mt-0">
         <div className="flex flex-col md:flex-row justify-between w-full">
           <div className="container mx-auto px-4 flex flex-col md:w-1/2 md:justify-center lg:ps-20">
