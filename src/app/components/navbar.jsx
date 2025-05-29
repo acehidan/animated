@@ -127,7 +127,9 @@ export default function Navbar() {
             </Link>
           </nav>
 
-          <button className="button hidden md:block">Consult with us</button>
+          <Link href="/contact" className="button hidden md:block">
+            Consult with us
+          </Link>
 
           <button
             className={`md:hidden ${
@@ -211,7 +213,9 @@ export default function Navbar() {
             >
               Contact
             </Link>
-            <button className="button">Get Started</button>
+            <Link href="/contact" className="button">
+              Consult with us
+            </Link>
           </div>
         </div>
       )}
