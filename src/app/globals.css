@@ -22,7 +22,7 @@
 }
 
 body {
-  background: var(--background);
+  background: #232323;
   color: var(--foreground);
   font-family: var(--font-poppins);
   -webkit-touch-callout: none; /* iOS Safari */
@@ -113,6 +113,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 10%;
+  z-index: -1;
+  /* background-color: #151515; */
 }
 
 .ctabutton {
@@ -143,7 +145,8 @@ body {
 }
 
 .button-outline:hover,
-.button:hover {
+.button:hover,
+.ctabutton:hover {
   scale: 1.02;
 }
 

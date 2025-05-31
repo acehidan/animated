@@ -56,7 +56,7 @@ export default function HeroSection() {
             alt="Product showcase"
             width={500}
             height={500}
-            className="md:w-1/2 h-[80vh] hidden md:block object-cover overflow-hidden border-none rounded-l-4xl"
+            className="md:w-1/2 h-[80vh] hidden md:block object-cover overflow-hidden border-none rounded-l-[70px]"
           />
 
           <Image

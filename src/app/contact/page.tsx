@@ -66,11 +66,10 @@ export default function Contact() {
                   <h2 className="text-[24px] md:text-[32px] font-semibold mb-8 inter text-[#151515] ">
                     Talk with our sale team
                   </h2>
-                  <p className="text-[16px] md:text-[20px] mb-8 text-[#151515] source-sans-3">
-                    Our office hours are Monday to Friday,
-                    <br /> 9 AM to 5 PM. We&apos;re here to assist you with any{" "}
-                    <br />
-                    questions or support you need.
+                  <p className="text-[16px] md:text-[20px] mb-8 text-[#151515] source-sans-3 max-w-xs">
+                    Our office hours are Monday to Friday, 9 AM to 5 PM.
+                    We&apos;re here to assist you with any questions or support
+                    you need.
                   </p>
 
                   <a
@@ -89,10 +88,10 @@ export default function Contact() {
                   <h2 className="text-[24px] md:text-[32px] font-semibold mb-8 inter text-[#151515]">
                     Contact us on Messegner
                   </h2>
-                  <p className="text-[16px] md:text-[20px] mb-8 text-[#151515] source-sans-3">
-                    If you want to learn more about our product <br /> and
-                    consult for your business. Our sale team is <br /> ready to
-                    answer your question anytime soon.
+                  <p className="text-[16px] md:text-[20px] mb-8 text-[#151515] source-sans-3 max-w-xs">
+                    If you want to learn more about our product and consult for
+                    your business. Our sale team is ready to answer your
+                    question anytime soon.
                   </p>
 
                   <a
