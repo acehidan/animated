@@ -4,7 +4,6 @@ import {
   FaFacebook,
   FaFacebookMessenger,
   FaLinkedin,
-  FaTelegram,
   FaTiktok,
 } from "react-icons/fa";
 import Image from "next/image";
@@ -63,25 +62,29 @@ export default function Footer() {
             <div className="flex justify-between md:space-x-4 lg:space-x-10">
               <Link
                 href="https://www.facebook.com/livecodemyanmar"
+                target="_blank"
                 className="border border-white p-1 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors"
               >
                 <FaFacebook size={20} />
               </Link>
               <Link
-                href="#"
+                href="https://www.tiktok.com/@live.code.myanmar?_t=ZS-8wrJ67NlGRk&_r=1"
+                target="_blank"
                 className="border border-white p-1 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors"
               >
                 <FaTiktok size={20} />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/live-code-myanmar/"
+                target="_blank"
                 className="border border-white p-1 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors"
               >
                 <FaLinkedin size={20} />
               </Link>
 
               <Link
-                href="#"
+                href="m.me/livecodemyanmar"
+                target="_blank"
                 className="border border-white p-1 w-10 h-10 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors"
               >
                 <FaFacebookMessenger size={20} />
